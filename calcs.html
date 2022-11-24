@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  -->
+    <h1 id="result"></h1>
+    <form onsubmit="submit">
+      <label for="">total marks</label>
+      <input type="number" id="tm" />
+      <label for="">obtained marks</label>
+      <input type="number" id="om" />
+    </form>
+    <button type="submit">submit</button>
+    <!--  -->
+    <script>
+      function perc() {
+        let totalMarks = document.querySelector("#tm").value;
+        let obtainedMarks = document.querySelector("#om").value;
+        per = (obtainedMarks * 100) / totalMarks;
+        // document.write(per);
+        document.querySelector("#result").innerHTML = `you have got ${per} %`;
+      }
+    </script>
+  </body>
+</html>
