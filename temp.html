@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature</title>
+  </head>
+  <body>
+    <script>
+      temp = prompt("enter the temperature");
+      let status =
+        temp > 40
+          ? "too hot"
+          : temp <= 40 && temp > 30
+          ? "hot"
+          : temp <= 30 && temp > 20
+          ? "mild"
+          : temp <= 20 && temp > 10
+          ? "cold"
+          : "too cold";
+      document.write(status);
+    </script>
+  </body>
+</html>
